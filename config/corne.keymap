@@ -73,7 +73,7 @@
                 <&kp LCTRL>;
         };
 
-        macro_COPY: COPY {
+        macro_COPY: macro_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -84,7 +84,7 @@
                 <&macro_release>,
                 <&kp LEFT_GUI>;
 
-            label = "COPY";
+            label = "macro_COPY";
         };
 
         PASTE: PASTE {
