@@ -73,32 +73,18 @@
                 <&kp LCTRL>;
         };
 
-        macro_COPY: macro_COPY {
+        Mission_Control: mission_control {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI>,
+                <&kp RCTRL>,
                 <&macro_tap>,
-                <&kp C>,
+                <&kp UP_ARROW>,
                 <&macro_release>,
-                <&kp LEFT_GUI>;
+                <&kp RCTRL>;
 
-            label = "macro_COPY";
-        };
-
-        PASTE: PASTE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp LEFT_GUI>;
-
-            label = "PASTE";
+            label = "mission_control";
         };
     };
 
@@ -221,10 +207,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&caps_word                     &kp Q  &kp W        &kp E           &kp R       &kp T        &kp Y                                &kp U            &kp I            &kp O        &kp P     &kp BACKSPACE
-&new_behavior LSHFT BACKSPACE  &kp A  &hm LCTRL S  &hm LEFT_ALT D  &hm LGUI F  &kp G        &kp H                                &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &kp SEMI  &new_behavior RIGHT_SHIFT SQT
-&kp LCTRL                      &kp Z  &kp X        &kp C           &kp V       &kp B        &kp N                                &kp M            &kp COMMA        &kp DOT      &kp FSLH  &kp RCTRL
-                                                   &macro_COPY     &lt 2 RET   &lt 1 TAB    &new_behavior RIGHT_SHIFT BACKSPACE  &lt 2 SPACE      &tog 4
+&caps_word                     &kp Q  &kp W        &kp E             &kp R       &kp T        &kp Y                                &kp U            &kp I            &kp O        &kp P     &kp BACKSPACE
+&new_behavior LSHFT BACKSPACE  &kp A  &hm LCTRL S  &hm LEFT_ALT D    &hm LGUI F  &kp G        &kp H                                &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &kp SEMI  &new_behavior RIGHT_SHIFT SQT
+&kp LCTRL                      &kp Z  &kp X        &kp C             &kp V       &kp B        &kp N                                &kp M            &kp COMMA        &kp DOT      &kp FSLH  &kp RCTRL
+                                                   &Mission_Control  &lt 2 RET   &lt 1 TAB    &new_behavior RIGHT_SHIFT BACKSPACE  &lt 2 SPACE      &tog 4
             >;
         };
 
