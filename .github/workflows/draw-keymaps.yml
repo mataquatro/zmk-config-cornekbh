@@ -1,0 +1,19 @@
+name: "Draw Keymap"
+on:
+  workflow_dispatch: # Allows manual trigger
+  push: # Triggers automatically on push to main
+    paths:
+      - "config/*.keymap"
+      - "config/*.json"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write # Allows committing the updated SVG back to your repo
+    with:
+      keymap_patterns: "config/*.keymap"
+      output_folder: "keymap-drawer"
+      parse_args: ""
+      draw_args: ""
