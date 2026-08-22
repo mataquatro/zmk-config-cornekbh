@@ -216,10 +216,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&caps_word                          &kp Q  &kp W        &kp E                   &kp R       &kp T        &kp Y                      &kp U            &kp I            &kp O        &kp P     &kp BACKSPACE
-&Hold_tap_layer_mc LSHFT BACKSPACE  &kp A  &hm LCTRL S  &hm LEFT_ALT D          &hm LGUI F  &kp G        &kp H                      &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &kp SEMI  &Hold_tap_layer_mc RIGHT_SHIFT SQT
-&kp LCTRL                           &kp Z  &kp X        &kp C                   &kp V       &kp B        &kp N                      &kp M            &kp COMMA        &kp DOT      &kp FSLH  &kp RCTRL
-                                                        &Hold_tap_layer_mc 3 0  &lt 1 RET   &lt 1 TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 2 SPACE      &tog 4
+&caps_word                          &kp Q  &kp W        &kp E                   &kp R       &kp T      &kp Y                      &kp U            &kp I            &kp O        &kp P     &kp BACKSPACE
+&Hold_tap_layer_mc LSHFT BACKSPACE  &kp A  &hm LCTRL S  &hm LEFT_ALT D          &hm LGUI F  &kp G      &kp H                      &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &kp SEMI  &Hold_tap_layer_mc RIGHT_SHIFT SQT
+&kp LCTRL                           &kp Z  &kp X        &kp C                   &kp V       &kp B      &kp N                      &kp M            &kp COMMA        &kp DOT      &kp FSLH  &kp RCTRL
+                                                        &Hold_tap_layer_mc 3 0  &lt 1 RET   &kp TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 2 SPACE      &tog 4
             >;
         };
 
